@@ -10,13 +10,24 @@ body {
 h1 {
   font-family: "Major Mono Display";
   color: rgb(2,93,140);
+  background-color: rgb(186,228,229);
   font-size: 70px;
-  margin-left: 150px;
+  box-shadow: 12px 12px 2px 1px rgb(190,110,158);
 }
 
 nav ul {
   padding-left: 0;
   list-style-type: none;
+  font-size: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(221,239,247);
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-top: dashed;
+  border-bottom: dashed;
+  border-color: rgb(190,110,158);
 }
 
 nav li {
@@ -28,12 +39,47 @@ nav li {
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-gap: 15px;
+  margin-top: 45px;
+  background-color: rgb(221,239,247);
+  grid-gap: 20px;
+  box-sizing: border-box;
+  border-style: double;
+  border-color: rgb(190,110,158);
+  border-width: 6px;
+}
+
+#section-intro #introduction {
+  box-sizing: border-box;
+  border-left: dashed;
+  border-color: rgb(190,110,158);
+  border-width: medium;
+}
+
+#section-intro p {
+  box-sizing: border-box;
+  border-left: dashed;
+  border-color: rgb(190,110,158);
+  border-width: medium;
+}
+
+#flag {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #introduction {
   color: rgb(42,143,189);
-  font-size: 45px;
+  font-size: 48px;
   margin-top: 0;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+#section-intro p {
+  padding-left: 10px;
 }
 
 #section-geo {
@@ -45,50 +91,231 @@ nav li {
   grid-column: 1 / -1;
   font-size: 45px;
   color: rgb(42,143,189);
+  background-color: rgb(221,239,247);
+  margin-bottom: 0;
+  padding-left: 10px;
+  box-shadow: inset 8px 4px rgb(190,110,158);
+}
+
+.polaroid {
+  grid-column: 2 / 3;
+  box-sizing: border-box;
+  border-top: double rgb(2,93,140);
+  border-bottom: double rgb(2,93,140);
+  border-width: 8px;
+  background-color: rgb(221,239,247);
+  padding-left: 10px;
+}
+
+.polaroid figure {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.polaroid h3{
+  color: rgb(190,110,158);
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.polaroid p {
+  padding-left: 10px;
 }
 
 #resources {
   grid-column: 3 / -1;
+  box-sizing: border-box;
+  border-style: double;
+  border-width: 8px;
+  border-color: rgb(2,93,140);
+  background-color: rgb(221,239,247);
+}
+
+#resources figure {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#resources ul{
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+#resources h3{
+  color: rgb(190,110,158);
+  font-size: 30px;
+  margin-left: 5px;
 }
 
 #land {
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
   grid-row: 2 / 3;
+  box-sizing: border-box;
+  border-style: double;
+  border-width: 8px;
+  border-color: rgb(2,93,140);
+  background-color: rgb(221,239,247);
+}
+
+#land figure {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#land h3 {
+  color: rgb(190,110,158);
+  font-size: 30px;
+  margin-left: 5px;
+}
+
+#land table {
+  padding-left: 20px;
 }
 
 #gov {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#gov ul {
+  list-style-type: circle;
 }
 
 #government {
+  grid-column: 1 / -1;
   font-size: 45px;
   color: rgb(42,143,189);
+  background-color: rgb(221,239,247);
+  margin-bottom: 0;
+  padding-left: 10px;
+  box-shadow: inset 8px 4px rgb(190,110,158);
 }
 
 #legal {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  background-color: rgb(221,239,247);
+  border-style: dashed;
+  border-color: rgb(2,93,140);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+#legal h3 {
+  color: rgb(190,110,158);
+  font-size: 20px;
+}
+
+#dependent {
+  background-color: rgb(221,239,247);
+  border-style: dashed;
+  border-color: rgb(2,93,140);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#dependent h3 {
+  color: rgb(190,110,158);
+  font-size: 20px;
+}
+
+#independence {
+  background-color: rgb(221,239,247);
+  border-style: dashed;
+  border-color: rgb(2,93,140);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#independence h3 {
+  color: rgb(190,110,158);
+  font-size: 20px;
+}
 #section-mil {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#section-mil article {
+  border-style: groove;
+  border-color: rgb(2,93,140);
+  background-color: rgb(221,239,247);
+  padding-left: 10px;
+}
+#section-mil article h3 {
+  color: rgb(190,110,158);
+  font-size: 20px;
 }
 
 #military {
   grid-column: 1 / -1;
   font-size: 45px;
   color: rgb(42,143,189);
+  margin-bottom: 0;
+  padding-left: 10px;
+  background-color: rgb(221,239,247);
+  box-shadow: inset 8px 4px rgb(190,110,158);
+}
+
+.land-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 14px;
+  min-width: 200px;
+  margin-left: 60px;
+}
+
+.land-table caption {
+  font-weight: bold;
+  background-color: rgb(190,110,158);
+  opacity: 0.7;
+}
+
+.land-table th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.land-table th, td {
+  padding: 4px 6px;
+}
+
+.land-table td, tr {
+  border-bottom: 1px solid rgb(190,110,158);
+}
+
+.mil-table {
+  border-collapse: collapse;
+  margin: 10px 0;
+  font-size: 14px;
+  min-width: 200px;
+  margin-left: 20px;
+}
+
+.mil-table th {
+  font-weight: bold;
+  background-color: rgb(190,110,158);
+  opacity: 0.7;
+  text-align: left;
+}
+
+footer {
+  background-color: rgb(221,239,247);
+}
+
+a {
+  color: rgb(149,28,100);
 }
 
 a:link {
-  color:rgb(42,143,189);
+  color: rgb(149,28,100);
+  text-decoration: none;
 }
 
 a:visited {
-  color: rgb(149,28,100);
+  color:rgb(42,143,189);
 }
 
 a:hover {
